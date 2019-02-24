@@ -72,7 +72,7 @@
       <ul>
         
         
-        <li><a class="icon" href="/2019/02/22/blog/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        <li><a class="icon" href="/2019/02/22/hello-world/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
         
         <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
         <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
@@ -158,11 +158,11 @@
 <ul>
 <li><p>推荐<a href="https://github.com/creationix/nvm" target="_blank" rel="noopener">使用curl安装</a>！！！（brew安装会出现重启terminal nvm命令失效）</p>
 <p>— 如果已经使用brew安装过，可以先卸载nvm <code>$ brew uninstall nvm</code> 再执行后续操作</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>重启terminal，输入 <code>$ nvm --version</code> 查看nvm是否安装成功</p>
 <p>— 如果出现 <code>nvm: command not found</code> ，可能是并没有 <code>~/.bash_profile</code> 文件存在，可以按照以下方式尝试解决：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> touch ~/.bash_profile</span><br><span class="line"><span class="meta">$</span> curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> touch ~/.bash_profile</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash</span></span><br></pre></td></tr></table></figure>
 <p>— 然后重启terminal</p>
 </li>
 <li><p>安装Node.js （默认stable版本）</p>
@@ -178,16 +178,16 @@
 <li><p>删除nvm文件</p>
 </li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> sudo rm -rf /usr/local/&#123;lib/node&#123;,/.npm,_modules&#125;,bin,share/man&#125;/&#123;npm*,node*,man1/node*&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo rm -rf /usr/<span class="built_in">local</span>/&#123;lib/node&#123;,/.npm,_modules&#125;,bin,share/man&#125;/&#123;npm*,node*,man1/node*&#125;</span></span><br></pre></td></tr></table></figure>
 <ul>
 <li><p>同时可能还需要</p>
- <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> sudo rm -rf /opt/local/bin/node /opt/local/include/node /opt/local/lib/node_modules</span><br><span class="line"><span class="meta">$</span> sudo rm -rf /usr/local/bin/npm /usr/local/share/man/man1/node.1 /usr/local/lib/dtrace/node.d</span><br></pre></td></tr></table></figure>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo rm -rf /opt/<span class="built_in">local</span>/bin/node /opt/<span class="built_in">local</span>/include/node /opt/<span class="built_in">local</span>/lib/node_modules</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo rm -rf /usr/<span class="built_in">local</span>/bin/npm /usr/<span class="built_in">local</span>/share/man/man1/node.1 /usr/<span class="built_in">local</span>/lib/dtrace/node.d</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>最后通过Homebrew检查</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> brew doctor</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> brew doctor</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>按照需求执行clean或prune</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> brew prune</span><br><span class="line"><span class="meta">$</span> brew prune</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> brew prune</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> brew prune</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
@@ -204,11 +204,11 @@
 <li><p>初始化Hexo</p>
 <ul>
 <li><p>首先用hexo初始化blog</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 建立一个名为&lt;folder&gt;的文件夹，Hexo会在这个文件夹里面进行初始化</span><br><span class="line"><span class="meta">$</span> hexo init &lt;folder&gt;</span><br><span class="line"><span class="meta">$</span> cd &lt;folder&gt;</span><br><span class="line"><span class="meta">#</span> node.js的命令，根据博客既定的dependencies配置安装所有的依赖包</span><br><span class="line"><span class="meta">$</span> npm install</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 建立一个名为&lt;folder&gt;的文件夹，Hexo会在这个文件夹里面进行初始化</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo init &lt;folder&gt;</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> &lt;folder&gt;</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> node.js的命令，根据博客既定的dependencies配置安装所有的依赖包</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> npm install</span></span><br></pre></td></tr></table></figure>
 <p>这里推荐 <folder> 为<strong><code>GitHubusername</code>.github.io</strong>。 因为如果没有购买域名，那你的blog所在的地址就是<strong><code>GitHubusername</code>.github.io</strong></folder></p>
 </li>
 <li><p>此时hexo已经初始化完毕可以进行一些预览，Hexo附赠一篇hello world文章</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 生成静态文件</span><br><span class="line"><span class="meta">$</span> hexo generate</span><br><span class="line"><span class="meta">#</span> 该命令可简化为 hexo g</span><br><span class="line"><span class="meta">#</span> 启动本地服务器</span><br><span class="line"><span class="meta">$</span> hexo server</span><br><span class="line"><span class="meta">#</span> 该命令可简化为 hexo s</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 生成静态文件</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo generate</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 该命令可简化为 hexo g</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 启动本地服务器</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo server</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 该命令可简化为 hexo s</span></span><br></pre></td></tr></table></figure>
 <p>在浏览器输入 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> 就可以看见网页和模板了</p>
 <ul>
 <li>如果对这个主题满意，可以跳过修改主题的步骤</li>
@@ -225,7 +225,7 @@
 <li>推荐主题NexT，有非常详细的<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">说明和教程</a></li>
 <li>本文以<a href="https://github.com/probberechts/hexo-theme-cactus" target="_blank" rel="noopener">Cactus</a>为例</li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 在Hexo初始化的文档下clone主题</span><br><span class="line"><span class="meta">$</span> git clone https://github.com/probberechts/hexo-theme-cactus.git themes/cactus</span><br><span class="line"><span class="meta">#</span> 进入 _config.yml 文件进行主题设置，也可以手动打开该文件</span><br><span class="line"><span class="meta">$</span> vi _config.yml</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 在Hexo初始化的文档下<span class="built_in">clone</span>主题</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">clone</span> https://github.com/probberechts/hexo-theme-cactus.git themes/cactus</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 进入 _config.yml 文件进行主题设置，也可以手动打开该文件</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> vi _config.yml</span></span><br></pre></td></tr></table></figure>
 <p>更改内容如下</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># theme: landscape</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">cactus</span></span><br></pre></td></tr></table></figure>
 <p>更改之后需要重新运行 <code>$ hexo g</code> 和 <code>$ hexo s</code>。</p>
@@ -233,7 +233,7 @@
 <li><p>新建一篇自己的文章（<a href="https://hexo.io/zh-cn/docs/writing" target="_blank" rel="noopener">Hexo官方教程</a>）</p>
 <ul>
 <li><p>在博客中创建新的文章主要依靠以下这条指令</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo new [layout] &lt;title&gt;</span></span><br></pre></td></tr></table></figure>
 <p>如果不指定 <code>layout</code> 那么就按照在文件<strong>_config.yml</strong> 里的<code>default_layout</code> 的参数值默认</p>
 <p>其中Hexo提供三种不同的<code>layout</code>，包括 <code>post</code> ， <code>page</code> 和  <code>draft</code>。</p>
 <ul>
@@ -257,7 +257,7 @@
 </ol>
 <h1 id="将blog配置到GitHub上"><a href="#将blog配置到GitHub上" class="headerlink" title="将blog配置到GitHub上"></a>将blog配置到GitHub上</h1><ul>
 <li><p>首先安装Hexo关于GitHub的支持插件，这样可以让以后的自动部署发布方便很多。<a href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="noopener">关于这个插件</a></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install hexo-deployer-git --save</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>在自己的GitHub上创建自己blog的repository，起名为<code>username</code>.github.io</p>
 <ul>
