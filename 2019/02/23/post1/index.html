@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="That BLOG">
 <meta property="og:description" content="本文基于Mac OS操作系统  准备工作 首先需要安装的是Git，node.js  安装git可用 $ brew install git  安装 node.js 推荐使用 nvm   nvm 是安装node.js的最佳方式   推荐使用curl安装！！！（brew安装会出现重启terminal nvm命令失效） — 如果已经使用brew安装过，可以先卸载nvm $ brew uninstall">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-24T06:35:51.000Z">
+<meta property="og:updated_time" content="2019-02-24T06:48:47.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何利用GitHub Pages搭建自己的博客（基于Hexo）">
 <meta name="twitter:description" content="本文基于Mac OS操作系统  准备工作 首先需要安装的是Git，node.js  安装git可用 $ brew install git  安装 node.js 推荐使用 nvm   nvm 是安装node.js的最佳方式   推荐使用curl安装！！！（brew安装会出现重启terminal nvm命令失效） — 如果已经使用brew安装过，可以先卸载nvm $ brew uninstall">
@@ -99,8 +99,8 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#准备工作"><span class="toc-number">1.</span> <span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#在本地上配置blog"><span class="toc-number">2.</span> <span class="toc-text">在本地上配置blog</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#将blog配置到GitHub上"><span class="toc-number">3.</span> <span class="toc-text">将blog配置到GitHub上</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#好啦！现在访问-https-username-github-io-就可以看到你的个人博客了"><span class="toc-number">3.1.</span> <span class="toc-text">好啦！现在访问 https://username.github.io 就可以看到你的个人博客了</span></a></li></ol></li></ol>
-    </div>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#准备工作"><span class="toc-number">1.</span> <span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在本地上配置blog"><span class="toc-number">2.</span> <span class="toc-text">在本地上配置blog</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#将blog配置到GitHub上"><span class="toc-number">3.</span> <span class="toc-text">将blog配置到GitHub上</span></a></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#好啦！现在访问-https-username-github-io-就可以看到你的个人博客了"><span class="toc-number"></span> <span class="toc-text">好啦！现在访问 https://username.github.io 就可以看到你的个人博客了</span></a>
+    </li></div>
   </span>
 </div>
 
@@ -146,7 +146,7 @@
     <blockquote>
 <p> 本文基于Mac OS操作系统</p>
 </blockquote>
-<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><ol>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ol>
 <li><p>首先需要安装的是Git，node.js</p>
 <ul>
 <li><p>安装git可用 <code>$ brew install git</code></p>
@@ -200,7 +200,7 @@
 <li><p>如果是使用brew安装，则关闭一次terminal可能会出现发现nvm和hexo均不能运行，尝试<code>$ export NVM_DIR=&quot;$HOME/.nvm&quot;</code> 和 <code>$ . $(brew --prefix nvm)/nvm.sh</code> 可以解决，也可以把这两句加在 ~/.bash_profile文件里，但这样会导致每次重启terminal花的时间较长</p>
 </li>
 </ol>
-<h1 id="在本地上配置blog"><a href="#在本地上配置blog" class="headerlink" title="在本地上配置blog"></a>在本地上配置blog</h1><ol>
+<h2 id="在本地上配置blog"><a href="#在本地上配置blog" class="headerlink" title="在本地上配置blog"></a>在本地上配置blog</h2><ol>
 <li><p>初始化Hexo</p>
 <ul>
 <li><p>首先用hexo初始化blog</p>
@@ -255,7 +255,7 @@
 </ul>
 </li>
 </ol>
-<h1 id="将blog配置到GitHub上"><a href="#将blog配置到GitHub上" class="headerlink" title="将blog配置到GitHub上"></a>将blog配置到GitHub上</h1><ul>
+<h2 id="将blog配置到GitHub上"><a href="#将blog配置到GitHub上" class="headerlink" title="将blog配置到GitHub上"></a>将blog配置到GitHub上</h2><ul>
 <li><p>首先安装Hexo关于GitHub的支持插件，这样可以让以后的自动部署发布方便很多。<a href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="noopener">关于这个插件</a></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install hexo-deployer-git --save</span></span><br></pre></td></tr></table></figure>
 </li>
@@ -273,7 +273,7 @@
 </li>
 </ul>
 <hr>
-<h2 id="好啦！现在访问-https-username-github-io-就可以看到你的个人博客了"><a href="#好啦！现在访问-https-username-github-io-就可以看到你的个人博客了" class="headerlink" title="好啦！现在访问 https://username.github.io 就可以看到你的个人博客了"></a>好啦！现在访问 <em>https://<code>username</code>.github.io</em> 就可以看到你的个人博客了</h2>
+<h1 id="好啦！现在访问-https-username-github-io-就可以看到你的个人博客了"><a href="#好啦！现在访问-https-username-github-io-就可以看到你的个人博客了" class="headerlink" title="好啦！现在访问 https://username.github.io 就可以看到你的个人博客了"></a>好啦！现在访问 <em>https://<code>username</code>.github.io</em> 就可以看到你的个人博客了</h1>
   </div>
 </article>
 
@@ -296,8 +296,8 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#准备工作"><span class="toc-number">1.</span> <span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#在本地上配置blog"><span class="toc-number">2.</span> <span class="toc-text">在本地上配置blog</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#将blog配置到GitHub上"><span class="toc-number">3.</span> <span class="toc-text">将blog配置到GitHub上</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#好啦！现在访问-https-username-github-io-就可以看到你的个人博客了"><span class="toc-number">3.1.</span> <span class="toc-text">好啦！现在访问 https://username.github.io 就可以看到你的个人博客了</span></a></li></ol></li></ol>
-    </div>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#准备工作"><span class="toc-number">1.</span> <span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在本地上配置blog"><span class="toc-number">2.</span> <span class="toc-text">在本地上配置blog</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#将blog配置到GitHub上"><span class="toc-number">3.</span> <span class="toc-text">将blog配置到GitHub上</span></a></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#好啦！现在访问-https-username-github-io-就可以看到你的个人博客了"><span class="toc-number"></span> <span class="toc-text">好啦！现在访问 https://username.github.io 就可以看到你的个人博客了</span></a>
+    </li></div>
 
     <div id="share-footer" style="display: none">
       <ul>
